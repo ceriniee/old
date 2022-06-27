@@ -24,4 +24,4 @@ Although there was little to modify because the data set was preprocessed, it ne
 
 ### 3. Algorithm Utilization/Model
 
-![Alt text](file:///Users/celine/Desktop/to/tipmodel.jpg)
+![Alt text](images/tipmodel.jpg/to/tipmodel.jpg)
