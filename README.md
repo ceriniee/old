@@ -1,6 +1,6 @@
 # Prediction of Side Effects Due to Polypharmacy Using Machine Learning
 
-We utilized GitHub NYXFLOWER's [TIP](https://github.com/NYXFLOWER/TIP) file and codes in order to tune and This project utilizes machine learning in order to predict the side effects of polypharmacy. If the user inputs the names of two drugs, the program predicts possible side effects that these drugs can bring.
+This work was inspired by the [TIP](https://github.com/NYXFLOWER/TIP) project of NYXFLOWER on GitHub. This project utilizes machine learning in order to predict the side effects of polypharmacy. If the user inputs the names of two drugs, the program predicts possible side effects that these drugs can bring.
 
 ## Background of the Proposal
 
@@ -12,3 +12,16 @@ Predicting drug side effects through machine learning has not yet been fully imp
 
 Machine learning is necessary to identify the interaction and side effects of the two drugs. It is the principle that a computer learns the drugs and side effects of a given dataset and then identifies the interaction of newly input drugs. If this idea is developed and commercialized, accidents caused by ignorance about the side effects of taking two drugs together can be prevented. 
 
+## Prototype Design
+
+### 1. Data Collection
+
+There were multiple drug data sets that could be used for free, but the collection was narrowed down when taking two or more drugs since most drug data sets were structures that contained a detailed explanation of one drug. In order to predict side effects, we needed a dataset connected not only to drugs but also to proteins. In conclusion, we decided to use the data published in [Decagon](https://github.com/mims-harvard/decagon) ([Modeling polypharmacy side effects with graph convolutional networks](https://academic.oup.com/bioinformatics/article/34/13/i457/5045770?login=false)) as it was utilized by other algorithms multiple times and suited our situation. 
+
+### 2. Data Processing
+
+Although there was little to modify because the data set was preprocessed, it needed additional development processes such as data type unification and drug-drug, drug-protein, and protein-protein map separately as it was improved to a more efficient model (described in #3) during development. 
+
+### 3. Algorithm Utilization/Model
+
+![Alt text](/path/to/file:///Users/celine/Desktop/tipmodel.jpg)
