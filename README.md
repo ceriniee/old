@@ -25,3 +25,11 @@ Although there was little to modify because the data set was preprocessed, it ne
 ### 3. Algorithm Utilization/Model
 
 ![Alt text](images/tipmodel.jpg)
+
+#### 3.1 Using the R-GCN model, we predicted the target link (side effect) among the multi-relational links produced by two drug combinations. 
+
+#### 3.2 Because both the Decagon model introduced in the paper and the R-GCN mentioned in 3.1 were all bound to one graph, there was a high computational cost and limits in the memory demand. There was an improved model of tri-graph information propagation for polypharmacy side effect prediction, which was used to significantly modify the code. At this time, the data processing mentioned in #2 was additionally carried out.
+
+#### 3.3 As a result, we were able to complete a model that showed the performance of AUPRC 0.889 AUROC 0.913. 
+
+### 4. User Input
