@@ -8,9 +8,7 @@ Currently, South Korea does not have a drug side effect prediction system. It is
 
 ## Overview
 
-Predicting drug side effects through machine learning has not yet been fully implemented despite the very high need. Therefore, this idea has a clear differentiation because it solves frequently occurring problems in a new way. When the user puts two drug names into the system, this app predicts possible side effects through algorithms. 
-
-Machine learning is necessary to identify the interaction and side effects of the two drugs. It is the principle that a computer learns the drugs and side effects of a given dataset and then identifies the interaction of newly input drugs. If this idea is developed and commercialized, accidents caused by ignorance about the side effects of taking two drugs together can be prevented. 
+Predicting drug side effects through machine learning has not yet been fully implemented despite the very high need. Therefore, this idea has a clear differentiation because it attempts to tackle frequently occurring problems in a new way. When the user puts two drug names into the system, this app predicts possible side effects through algorithms. 
 
 ## Prototype Design
 
