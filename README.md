@@ -1,6 +1,6 @@
 # Prediction of Side Effects Due to Polypharmacy Using Machine Learning
 
-This work was inspired by the [TIP](https://github.com/NYXFLOWER/TIP) project of NYXFLOWER on GitHub. This project utilizes machine learning in order to predict the side effects of polypharmacy. If the user inputs the names of two drugs, the program predicts possible side effects that these drugs can bring.
+This work was inspired by the [TIP](https://github.com/NYXFLOWER/TIP) project of NYXFLOWER on GitHub and the [Decagon](http://snap.stanford.edu/decagon/) project. This project utilizes machine learning in order to predict the side effects of polypharmacy. If the user inputs the names of two drugs, the program predicts possible side effects that these drugs can bring.
 
 ## Background of the Proposal
 
