@@ -20,7 +20,7 @@ There were multiple drug data sets that could be used for free, but the collecti
 
 Although there was little to modify because the data set was preprocessed, it needed additional development processes such as data type unification and drug-drug, drug-protein, and protein-protein map separately as it was improved to a more efficient model (described in #3) during development. 
 
-### 3. Algorithm Utilization/Model
+### 3. Model Summary
 
 ![Alt text](images/tipmodel.jpg)
 
