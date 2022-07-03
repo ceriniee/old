@@ -4,7 +4,7 @@ This work was inspired by the [TIP](https://github.com/NYXFLOWER/TIP) project of
 
 ## Background of the Proposal
 
-Currently, South Korea does not have a drug side effect prediction system. It is possible to find the name, efficacy, and side effects of one drug on portal sites such as Naver, but the combination of the two drugs and the side effects that the combination brings are difficult to predict. Therefore, most people have no common sense of side effects when taking more than one drug without the attention of a specialist. This idea was proposed to predict the side effects that people who have underlying diseases or who have medication they usually take (such as contraceptives, depression drugs, diabetes drugs, allergy drugs, etc.) would be wary of when taking more than one drug.
+Currently, South Korea does not have a drug side effect prediction system. It is possible to find the name, effectiveness, and side effects of one drug on portal sites such as Naver, but the combination of the two drugs and the side effects that the combination brings are difficult to predict. Therefore, most people have no common sense of side effects when taking more than one drug without the attention of a specialist. This idea was proposed to predict the side effects that people who have underlying diseases or who have medication they usually take (such as contraceptives, depression drugs, diabetes drugs, allergy drugs, etc.) would be wary of when taking more than one drug.
 
 ## Overview
 
