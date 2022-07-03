@@ -58,3 +58,7 @@ The necessary parts for predicting side effects are the Edge and Edge labels con
 The dataset used for model learning was extracted from the [PubChem](https://pubchem.ncbi.nlm.nih.gov/) online database. Therefore, when the user puts the drug name in the app as an input, the user is changing the drug name to the chem ID using the site above. We used Selenium to do the crawling. We utilized the ID combination to classify whether it was a trained combination or not. 
 
 ![Alt text](images/outcome.jpg)
+
+## Limitations
+
+We also tried to create a system in which there is no limit in the type of inputted drug (user can input any type of drug). However, in order to do so, we needed professional medical knowledge and a great amount of time to input the possible side effects that the combination of drugs may bring. This is certainly possible, but it would require professional opinion and knowledge related to this domain. 
