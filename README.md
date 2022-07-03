@@ -60,4 +60,4 @@ The dataset used for model learning was extracted from the [PubChem](https://pub
 ![Alt text](images/outcome.jpg)
 ## Limitations
 
-We also tried to create a system in which there is no limit in the type of inputted drug (user can input any type of drug). However, in order to do so, we needed professional medical knowledge and a great amount of time to input the possible side effects that the combination of drugs may bring. This is certainly possible, but it would require professional opinion and knowledge related to this domain. 
+Our dataset is closed, meaning that there is a limit in the types of drugs that the user can input. We also tried to create a system in which there is no limit in the type of inputted drug (user can input any type of drug). However, in order to do so, we needed professional medical knowledge and a great amount of time to input the possible side effects that the combination of drugs may bring. This is certainly possible, but it would require professional opinion and knowledge related to this domain. 
