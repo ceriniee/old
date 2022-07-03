@@ -40,7 +40,7 @@ Although there was little to modify because the data set was preprocessed, it ne
 
 ### 1. Development Environment
 
-Our program was developed using Python, MacOS for OS, and PyTorch and PyTorch-Geometric for ML libraries. Because of the limited functions of the laptop, we completed the machine learning using the GPU in Google Collaboration.
+We used Google Colab when developing our program. Our program was developed using Python 3.8.8, MacOS 10.14.6, and PyTorch 1.11.0 (torch-scatter 2.0.9, torch-sparse 0.6.13, torch-cluster 1.6.0, torch-spline-conv 1.2.1) and PyTorch-Geometric 2.0.4 for ML libraries. Because we used the CUDA in Google Colab, the CUDA version may be different. Because of the limited functions of the laptop, we completed the machine learning using the GPU in Google Collaboration.
 
 ### 2. Model Explanation
 
@@ -58,6 +58,9 @@ The necessary parts for predicting side effects are the Edge and Edge labels con
 The dataset used for model learning was extracted from the [PubChem](https://pubchem.ncbi.nlm.nih.gov/) online database. Therefore, when the user puts the drug name in the app as an input, the user is changing the drug name to the chem ID using the site above. We used Selenium to do the crawling. We utilized the ID combination to classify whether it was a trained combination or not. 
 
 ![Alt text](images/outcome.jpg)
+## Advanced
+
+
 ## Limitations
 
 Our dataset is closed, meaning that there is a limit in the types of drugs that the user can input. We also tried to create a system in which there is no limit in the type of inputted drug (user can input any type of drug). However, in order to do so, we needed professional medical knowledge and a great amount of time to input the possible side effects that the combination of drugs may bring. This is certainly possible, but it would require professional opinion and knowledge related to this domain. 
