@@ -60,7 +60,7 @@ Although there was little to modify because the data set was preprocessed, it ne
 We used Google Colab when developing our program. Our program was developed using Python 3.8.8, MacOS 10.14.6, and PyTorch 1.11.0 (torch-scatter 2.0.9, torch-sparse 0.6.13, torch-cluster 1.6.0, torch-spline-conv 1.2.1) and PyTorch-Geometric 2.0.4 for ML libraries. Because we used the CUDA in Google Colab, the CUDA version may be different. Because of the limited functions of the laptop, we completed the machine learning using the GPU in Google Collaboration.
 
 ## Advanced
-For now, we used the processes of data crawling in order to create a pipeline. When advanced knowledge from professionals regarding a greater variety of drug combinations and their side effects are inputted, this can add onto the program and contribute to a larger system. 
+For now, we used the processes of data crawling in order to create a pipeline. Here, there is a closed system in which users are able to enter the names of certain drugs and their combinations to get a result. When advanced knowledge from professionals regarding a greater variety of drug combinations and their side effects are inputted, this can add onto the program and contribute to a larger system. 
 
 ## Limitations
 
