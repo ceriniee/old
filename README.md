@@ -10,6 +10,8 @@ Currently, South Korea does not have a drug side effect prediction system. It is
 
 Predicting drug side effects through machine learning has not yet been fully implemented despite the very high need. Therefore, this idea has a clear differentiation because it attempts to tackle frequently occurring problems in a new way. When the user puts two drug names into the system, this app predicts possible side effects through algorithms. 
 
+![Alt text](images/outcome.jpg)
+
 ## Key Technologies and Features
 
 ### 1. Model Explanation
@@ -27,8 +29,6 @@ The necessary parts for predicting side effects are the Edge and Edge labels con
 ### 2. Data Crawling
 The dataset used for model learning was extracted from the [PubChem](https://pubchem.ncbi.nlm.nih.gov/) online database. Therefore, when the user puts the drug name in the app as an input, the user is changing the drug name to the chem ID using the site above. We used Selenium to do the crawling. We utilized the ID combination to classify whether it was a trained combination or not. 
 
-![Alt text](images/outcome.jpg)
-
 ## Prototype Design
 
 ### 1. Data Collection
@@ -43,21 +43,18 @@ Although there was little to modify because the data set was preprocessed, it ne
 
 ![Alt text](images/tipmodel.jpg)
 
-#### 3.1 Using the R-GCN model, we predicted the target link (side effect) among the multi-relational links produced by two drug combinations. 
+3.1 Using the R-GCN model, we predicted the target link (side effect) among the multi-relational links produced by two drug combinations. 
 
-#### 3.2 Because both the Decagon model introduced in the paper and the R-GCN mentioned in 3.1 were all bound to one graph, there was a high computational cost and limits in the memory demand. There was an improved model of tri-graph information propagation for polypharmacy side effect prediction, which was used to significantly modify the code. At this time, the data processing mentioned in #2 was additionally carried out.
+3.2 Because both the Decagon model introduced in the paper and the R-GCN mentioned in 3.1 were all bound to one graph, there was a high computational cost and limits in the memory demand. There was an improved model of tri-graph information propagation for polypharmacy side effect prediction, which was used to significantly modify the code. At this time, the data processing mentioned in #2 was additionally carried out.
 
-#### 3.3 As a result, we were able to complete a model that showed the performance of AUPRC 0.889 AUROC 0.913. 
+3.3 As a result, we were able to complete a model that showed the performance of AUPRC 0.889 AUROC 0.913. 
 
 ### 4. User Input
 
-#### 4.1 Using Python and Selenium, we accessed the online DB from which the data set was extracted and developed a function to change it to a drug ID when a user enters a drug name.
+4.1 Using Python and Selenium, we accessed the online DB from which the data set was extracted and developed a function to change it to a drug ID when a user enters a drug name.
 
-#### 4.2 We developed a function that checks whether the model is a combination of drugs studied with the ID obtained in 4.1. If it is, the system implements a method that would reduce time for the prediction, and if it is not, the system would implement an additional learning method according to the model format. 
+4.2 We developed a function that checks whether the model is a combination of drugs studied with the ID obtained in 4.1. If it is, the system implements a method that would reduce time for the prediction, and if it is not, the system would implement an additional learning method according to the model format. 
 
-## Development Environment
-
-We used Google Colab when developing our program. Our program was developed using Python 3.8.8, MacOS 10.14.6, and PyTorch 1.11.0 (torch-scatter 2.0.9, torch-sparse 0.6.13, torch-cluster 1.6.0, torch-spline-conv 1.2.1) and PyTorch-Geometric 2.0.4 for ML libraries. Because we used the CUDA in Google Colab, the CUDA version may be different. Because of the limited functions of the laptop, we completed the machine learning using the GPU in Google Collaboration.
 
 ## Advanced
 For now, we used the processes of data crawling in order to create a pipeline. Here, there is a closed system in which users are able to enter the names of certain drugs and their combinations to get a result. When advanced knowledge from professionals regarding a greater variety of drug combinations and their side effects are inputted, this can add onto the program and contribute to an expanded system. 
@@ -65,3 +62,7 @@ For now, we used the processes of data crawling in order to create a pipeline. H
 ## Limitations
 
 Our dataset is closed, meaning that there is a limit in the types of drugs that the user can input. We also tried to create a system in which there is no limit in the type of inputted drug (user can input any type of drug). However, in order to do so, we needed professional medical knowledge and a great amount of time to input the possible side effects that the combination of drugs may bring. This is certainly possible, but it would require professional opinion and knowledge related to this domain. 
+
+## Development Environment
+
+We used Google Colab when developing our program. Our program was developed using Python 3.8.8, MacOS 10.14.6, and PyTorch 1.11.0 (torch-scatter 2.0.9, torch-sparse 0.6.13, torch-cluster 1.6.0, torch-spline-conv 1.2.1) and PyTorch-Geometric 2.0.4 for ML libraries. Because we used the CUDA in Google Colab, the CUDA version may be different. Because of the limited functions of the laptop, we completed the machine learning using the GPU in Google Collaboration.
