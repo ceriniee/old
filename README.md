@@ -26,7 +26,7 @@ As explained above, in order to reduce the amount of computation and increase th
 #### 1.2 Decoder
 The necessary parts for predicting side effects are the Edge and Edge labels contained in the D-D graph. Since it is a graph of the Triple (D-E-D) structure, the target side effects were calculated as probabilities by activating with a sigmoid function using DistMult factorization, which can preserve the relationship between the nodes well. 
 
-### 2. Data Crawling
+### 2. Data Circulation and Modernization
 The dataset used for model learning was extracted from the [PubChem](https://pubchem.ncbi.nlm.nih.gov/) online database. Therefore, when the user puts the drug name in the app as an input, the user is changing the drug name to the chem ID using the site above. We used Selenium to do the crawling. We utilized the ID combination to classify whether it was a trained combination or not. 
 
 ## Prototype Design
