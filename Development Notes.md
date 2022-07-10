@@ -3,8 +3,8 @@
 Start Date: December 2021
 
 ## December 2021
-* I set up the development environment. 
-* There were many trials and errors. 
+* I set up the development environment.
+* There were many trials and errors.
  * First, I tried to work with my local computer (Mac). 
   * My Mac does not have a vram.
  * So I also tried to work with a Windows computer that has a GPU (RTX 2070 SUPER) and set up a virtual machine (VM). 
