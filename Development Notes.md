@@ -1,6 +1,6 @@
 # Development Notes: Dec. 2021 ~ June 2022
 
-Start Date: December 2021
+Project Start Date: December 2021
 
 ## December 2021 
 * I set up the development environment. 
@@ -53,6 +53,8 @@ Start Date: December 2021
 * I tried to search both drugs and medicines from the dataset on PubChem. 
 * I got the Chem IDs (CIDs) of the drugs. 
 
+## May 2022
+
 ### May 2, 2022
 * I encountered a problem: 
   * For some drugs, best matches do not exist. 
@@ -87,3 +89,33 @@ Start Date: December 2021
   * The cid could be found not only in div but in table. 
 * Solution: I unified the path to all tables. 
   * I reconnected the XPath and did crawling again. 
+
+## June 2022
+
+### June 5, 2022
+* Problem 1: XPath Error
+  * Occurred even when we copied XPath directly from inspect
+* Solution 1: found that it was because we did not wait
+  * The program was unable to locate the element. 
+* Problem 2: TimeoutException
+* Solution 2: Change element_to_be_clickable to presence_of_element_located
+  * Element was never clickable, so waiting for it to be clickable would not make sense. 
+
+### June 12, 2022
+* Problem 1: XPath still did not work
+* Solution 1: use the most specific div for the first
+* Problem 2: The first drug name did not delete before putting in the second drug name
+* Solution 2: Find searchbar, send_keys(Keys.COMMAND + ‘a’) and send_keys(Keys.DELETE) 
+* I checked if other drug combinations worked. 
+
+### June 19, 2022
+* I created an account on Github in order to create a portfolio of my polypharmacy project. 
+* Using various sites on Google, I learned markdown languages and how to use Github. 
+  * [https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+  * [https://www.datacamp.com/tutorial/git-push-pull](https://www.datacamp.com/tutorial/git-push-pull)
+  * [https://chancoding.tistory.com/76](https://chancoding.tistory.com/76)
+  * [https://github.com/git-guides/git-push](https://github.com/git-guides/git-push)
+
+### June 27, 2022
+* I uploaded my project on Github. 
+* I edited and added details to my development notes. 
