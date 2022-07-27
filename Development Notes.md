@@ -129,11 +129,15 @@ Project Start Date: December 2021
 ### July 17, 2022
 * I started uploading my TIP data files onto my Github portfolio. 
 * Problem 1: I could not upload files that were larger than 25 mb through the browser. 
-* Solution 1: I had to push the file through terminal. 
+  * Solution 1: I had to push the file through terminal. 
+  * [https://stackoverflow.com/questions/61040990/upload-file-25-mb-on-github](https://stackoverflow.com/questions/61040990/upload-file-25-mb-on-github)
+  * [https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository)
 * Problem 2: The push did not work. 
-* Solution 2: The system could not push the file because the system confused location. I created another folder separate for the files that I was going to push. 
+  * Solution 2: The system could not push the file because the system confused location. I created another folder separate for the files that I was going to push. 
 * Problem 3: The push still did not work. 
-* Solution 3: I realized that I did not do git init in terminal, and that was the reason behind the problem. I solved this problem by going back and doing git init. 
+  * Solution 3: I realized that I did not do git init in terminal, and that was the reason behind the problem. I solved this problem by going back and doing git init. 
 
 ### July 27, 2022
-* Problem: When I enter commit -m, it says that there is nothing to commit. My push was rejected. 
+* Problem 1: When I enter commit -m, it says that there is nothing to commit. My push was rejected. 
+* Problem 2: How do we change the location of a file on Github? 
+  * Problem 3: Tried the option explained in [this](https://docs.github.com/en/repositories/working-with-files/managing-files/moving-a-file-to-a-new-location) website, but still did not work.
