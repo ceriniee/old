@@ -119,3 +119,21 @@ Project Start Date: December 2021
 ### June 27, 2022
 * I uploaded my project on Github. 
 * I edited and added details to my development notes. 
+
+### July 3, 2022
+* I wrote the README section. 
+
+### July 10, 2022
+* I edited the README section. 
+
+### July 17, 2022
+* I started uploading my TIP data files onto my Github portfolio. 
+* Problem 1: I could not upload files that were larger than 25 mb through the browser. 
+* Solution 1: I had to push the file through terminal. 
+* Problem 2: The push did not work. 
+* Solution 2: The system could not push the file because the system confused location. I created another folder separate for the files that I was going to push. 
+* Problem 3: The push still did not work. 
+* Solution 3: I realized that I did not do git init in terminal, and that was the reason behind the problem. I solved this problem by going back and doing git init. 
+
+### July 27, 2022
+* Problem: When I enter commit -m, it says that there is nothing to commit. My push was rejected. 
